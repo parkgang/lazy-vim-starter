@@ -8,3 +8,11 @@
     ln -s ~/dotfiles/vim/lazy-vim ~/.config/nvim
   ```
 - `:LazyHealth` 으로 헬스 체크
+
+## Note
+
+- `VSCode Nvim` 확장에서도 사용됩니다.
+- 트러블 슈팅 시 참고 정보
+  - 해당 제품은 플러그인 매니저는 [lazy.nvim](https://github.com/folke/lazy.nvim), config 관리는 [LazyVim/starter](https://github.com/LazyVim/starter) 으로 역할이 나눠져있습니다.
+  - 해당 제품은 각종 config를 제공하는 것이고 그것을 설치하는 주체는 `lazy.nvim` 라는 것입니다.
+  - 이점을 유의하고 트러블 슈팅을 진행하도록 합니다.
