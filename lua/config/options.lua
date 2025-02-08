@@ -11,3 +11,19 @@ vim.opt.langmap =
 -- 레지스터
 -- <C-a> 단축키를 희생했음으로 편하게 전체 선택을 위한 메크로
 vim.fn.setreg("a", "ggVG")
+
+--
+--
+-- VSCode
+if vim.g.vscode then
+  print("LazyVim이 VSCode에서 실행 중 입니다 💤")
+
+  -- [폴더 접기 명령 수행시 VSCode 단축키 호출](https://github.com/vscode-neovim/vscode-neovim/issues/58#issuecomment-989481648)
+  vim.keymap.set("n", "zM", "<Cmd>call VSCodeNotify('editor.foldAll')<CR>")
+  vim.keymap.set("n", "zR", "<Cmd>call VSCodeNotify('editor.unfoldAll')<CR>")
+  vim.keymap.set("n", "zc", "<Cmd>call VSCodeNotify('editor.fold')<CR>")
+  vim.keymap.set("n", "zC", "<Cmd>call VSCodeNotify('editor.foldRecursively')<CR>")
+  vim.keymap.set("n", "zo", "<Cmd>call VSCodeNotify('editor.unfold')<CR>")
+  vim.keymap.set("n", "zO", "<Cmd>call VSCodeNotify('editor.unfoldRecursively')<CR>")
+  vim.keymap.set("n", "za", "<Cmd>call VSCodeNotify('editor.toggleFold')<CR>")
+end
