@@ -27,11 +27,12 @@ vim.keymap.set("v", "x", '"_x')
 vim.keymap.set("n", "X", '"_X')
 vim.keymap.set("v", "X", '"_X')
 
-vim.keymap.set("n", "s", '"_s')
-vim.keymap.set("v", "s", '"_s')
+-- LazyVim에서 미리 정의된 단축키 있음
+-- vim.keymap.set("n", "s", '"_s')
+-- vim.keymap.set("v", "s", '"_s')
 
-vim.keymap.set("n", "S", '"_S')
-vim.keymap.set("v", "S", '"_S')
+-- vim.keymap.set("n", "S", '"_S')
+-- vim.keymap.set("v", "S", '"_S')
 
 vim.keymap.set("n", "c", '"_c')
 vim.keymap.set("v", "c", '"_c')
@@ -55,11 +56,12 @@ vim.keymap.set("v", "<Space>x", "x")
 vim.keymap.set("n", "<Space>X", "X")
 vim.keymap.set("v", "<Space>X", "X")
 
-vim.keymap.set("n", "<Space>s", "s")
-vim.keymap.set("v", "<Space>s", "s")
+-- LazyVim에서 미리 정의된 단축키 있음
+-- vim.keymap.set("n", "<Space>s", "s")
+-- vim.keymap.set("v", "<Space>s", "s")
 
-vim.keymap.set("n", "<Space>S", "S")
-vim.keymap.set("v", "<Space>S", "S")
+-- vim.keymap.set("n", "<Space>S", "S")
+-- vim.keymap.set("v", "<Space>S", "S")
 
 vim.keymap.set("n", "<Space>c", "c")
 vim.keymap.set("v", "<Space>c", "c")
